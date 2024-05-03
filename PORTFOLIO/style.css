@@ -1,69 +1,197 @@
+/* Hamburger button riglo wa7dik */
+.toggle-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    padding-bottom:10px 25px;
+    margin-right: 10px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    transition: left 0.3s ease;
+}
+
+.sidebar.active {
+    left: 0;
+}
+@media screen and (min-width: 908px) {
+    .nnavigation {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        display: block;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #000000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+    }
+
+    .navigation a {
+        color: blueviolet;
+        text-decoration: none;
+        font-size: 1.5em;
+        padding: 20px;
+        transition: 0.7s ease;
+    }
+    .navigation a:hover {
+        color: black;
+    }
+}
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    transition: left 0.3s ease;
+    z-index: 999; 
+    overflow-x: hidden;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-navigation {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px; 
+}
+
+.sidebar-navigation a {
+    color: rgb(63, 52, 226);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 20px;
+    transition: 0.7s ease;
+}
+
+.sidebar-navigation a:hover {
+    color: rgb(255, 255, 255); 
+}
+
+/* Overlay styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    z-index: 998;
+    display: none; 
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-header{
+
+header {
     background-color: #f0f0f0;
     width: 100%;
     position: fixed;
     z-index: 999;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 200px;
+    padding: 10px 5%;
 }
-.logo{
+
+.logo {
+    width: 70%;
     text-decoration: none;
     color: blueviolet;
     font-weight: 700;
     font-size: 1.8em;
 }
-.navigation a{
+
+.navigation a {
     color: blueviolet;
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 24px;
     font-weight: 500;
-    padding-left: 30px;
+    margin: 0 10px;
     transition: 0.7s ease;
 }
-.navigation a:hover{
+
+.navigation a:hover {
     color: black;
-    font-size: larger;
+    font-size: 1.5em;
 }
-section{
-    padding: 100px 200px;
+
+section {
+    padding: 100px 5%;
 }
-.main{
+
+.main {
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     background-color: black;
+    padding: 100px 5%;
 }
-.main h2{
+
+.main h2 {
     color: white;
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 500;
 }
-.main h2 span{
+
+.main h2 span {
     display: inline-block;
     margin-top: 10px;
     color: blueviolet;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
 }
-.main h3{
+
+.main h3 {
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 700;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
+
 .mainB{
     color: white;
     background-color: rgba(137, 43, 226, 0.721);
@@ -82,10 +210,14 @@ section{
     color: blueviolet;
     transform: scale(1.1);
 }
+.social-icons{
+    padding: 5%;
+}
 .social-icons a{
     color: white;
     font-size: 1.7em;
     padding-right: 30px;
+    margin: 2%;
 }
 
 .title{

@@ -10,6 +10,7 @@
 <body>
     <header>
         <a href="#" class="logo">CHAIMA</a>
+        <button class="toggle-button">&#9776;</button>
         <nav class="navigation">
             <a href="#Home">Home</a>
             <a href="#skills">Skills</a>
@@ -17,6 +18,16 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+    <div class="sidebar">
+        <nav class="sidebar-navigation">
+            <a href="#Home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    <div class="overlay"></div>
+    
     <section class="main" id="Home">
         <div>
             <h2>Hello, I'm CHAIMA <br> <span> web developer </span></h2>
@@ -102,17 +113,22 @@
                  </div>
                  <div class="card">
                     <ul>
-                        <li><i class="fa-solid fa-location-dot"></i><span class="contact_info">location:</span> sfax,Tunisia</li>
-                        <li><i class="fa-solid fa-phone"></i> <span class="contact_info">Phone Number:</span> +216 20035544</a></li>
-                        <li><i class="fa-solid fa-envelope"></i> <span class="contact_info">Email:</span> chaimadhouib493@gmail.com</li>
-                        <li><i class="fa-brands fa-square-instagram"></i><span class="contact_info">Insta:</span> chayma___dh</li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i><span class="contact_info">location:</span> sfax,Tunisia</li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i> <span class="contact_info">Phone Number:</span> +216 20035544</a></li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i><span class="contact_info">Email:</span> chaimadhouib493@gmail.com</li>
+                        <li>
+                            <i class="fa-brands fa-square-instagram"></i><span class="contact_info">Insta:</span> chayma___dh</li>
                     </ul>
                  </div>
             </div>
     </section>
     <footer class="footer">
-        <p class="footer-title"> Copyrights @ <span>Chaima Dhouib</span></p>
-        <div class="social-icons">
+        <p class="footer-title"> Copyrights @ <span>Chaima Dhouib</span><br></p>
+        <hr class="nnavigation"><br class="nnavigation"><br>
+        <br><div class="social-icons">
             <a href="https://www.instagram.com/chayma___dh/"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="https://twitter.com/chaima_dh9"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://github.com/ChaimaDh"><i class="fa-brands fa-github"></i></a>
@@ -120,10 +136,7 @@
             <a href=""><i class="fa-brands fa-discord"></i></a>
         </div>
     </footer>
-    <script>
-        function test(){
-            alert('jadt 3lik tw enty test w bara ma 7atit hata project 🙂👀')
-        }
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
